@@ -3,6 +3,9 @@
 namespace App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
+use App\Http\Middleware\EnsureIsOwner;
+use App\Http\Middleware\EnsureIsManager;
+use App\Http\Middleware\EnsureIsChasier;
 
 class Kernel extends HttpKernel
 {
@@ -64,5 +67,8 @@ class Kernel extends HttpKernel
         'signed' => \App\Http\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'is.owner' => EnsureIsOwner::class,
+        'is.manager' => EnsureIsManager::class,
+        'is.chasier' => EnsureIsChasier::class,
     ];
 }

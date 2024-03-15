@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class customer extends Model
+class Customer extends Model
 {
     use HasFactory;
 
@@ -16,6 +16,5 @@ class customer extends Model
         'email',
         'date_of_birth',
         'medical_conditions',
-        // Add more fields as needed
     ];
 }
