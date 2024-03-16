@@ -10,16 +10,14 @@
 ## Testing Steps
 - create a database - 'pharmacy-ms'
 - Do a migration - php artisan migrate
-   ## Test Below Scenarios
-    - test the user registration ('/register')
-    - user login ('/login')
-    - add customer - POST: 'api/customer'
-    - add medicine - POST: 'api/medicine'
-    - edit customer - PUT: 'api/customer/{id}'
-    - edit medicine - PUT: 'api/medicine/{id}'
-    - delete customer - DELETE: 'api/customer/{id}'
-    - delete medicine - DELETE: 'api/medicine/{id}'
+## Test Below Scenarios (Endpoints)
+- Test the user registration ('/register')
+- User login ('/login')
+- Add customer - POST: 'api/customer'
+- Add medicine - POST: 'api/medicine'
+- Edit customer - PUT: 'api/customer/{id}'
+- Edit medicine - PUT: 'api/medicine/{id}'
+- Delete customer - DELETE: 'api/customer/{id}'
+- Delete medicine - DELETE: 'api/medicine/{id}'
 
-
-## Learning Laravel
 
