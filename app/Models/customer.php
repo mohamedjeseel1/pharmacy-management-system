@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Medicine;
 
 class Customer extends Model
 {
@@ -17,4 +18,9 @@ class Customer extends Model
         'date_of_birth',
         'medical_conditions',
     ];
+
+    public function medicines()
+    {
+        return $this->hasMany(Medicine::class);
+    }
 }
